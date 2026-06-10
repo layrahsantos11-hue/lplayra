@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel", serif;
+
+  --color-esmeralda-950: #022C22;
+  --color-esmeralda-900: #043927;
+  --color-esmeralda-800: #064E3B;
+  --color-esmeralda-700: #0D6E4F;
+  --color-esmeralda-600: #0F8F68;
+  
+  --color-stone-50: #FCFAF7;
+  --color-stone-100: #F7F4EF;
+  --color-stone-200: #EFECE5;
+  --color-stone-300: #E0DBD0;
+  
+  --color-gold-50: #FEFCF3;
+  --color-gold-100: #FDF5DF;
+  --color-gold-200: #FAEAB8;
+  --color-gold-300: #FEEDC5;
+  --color-gold-400: #E5BE62;
+  --color-gold-500: #D8A53E;
+  --color-gold-elegant: #C5A059;
+  --color-gold-bright: #D4AF37;
+  --color-gold-dark: #9A7432;
+}
+
+/* Luxury animations and decorative elements */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 4px rgba(197, 168, 92, 0.4));
+  }
+  50% {
+    opacity: 0.6;
+    filter: drop-shadow(0 0 15px rgba(197, 168, 92, 0.8));
+  }
+}
+
+.luxury-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.5; }
+  50% { transform: scale(1.2) rotate(45deg); opacity: 1; }
+}
+
+.sparkle-animation {
+  animation: sparkle 3s infinite ease-in-out;
+}
+
+/* Beautiful custom fine-print shadows and scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #011c13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a85c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+html {
+  scroll-behavior: smooth;
+}

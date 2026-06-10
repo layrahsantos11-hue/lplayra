@@ -143,7 +143,7 @@ export default function Formulario() {
             {/* Benefit details */}
             <div className="space-y-4 pt-4 border-t border-stone-200/80">
               <p className="font-sans text-sm sm:text-base text-stone-600 leading-relaxed font-light">
-                Ao preencher o formulário ao lado de nossa consultoria, você entra diretamente em nossa lista prioritária. Layra ou sua assessoria fará uma triagem carinhosa e exclusiva.
+                Ao preencher o formulário ao lado para a mentoria, você entra diretamente em nossa lista prioritária. Layra ou sua assessoria fará uma triagem carinhosa e exclusiva.
               </p>
               
               <div className="flex gap-4 items-center pt-2">

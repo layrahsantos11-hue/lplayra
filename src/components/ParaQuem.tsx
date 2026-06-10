@@ -41,7 +41,7 @@ export default function ParaQuem() {
             </div>
 
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-esmeralda-950 font-light leading-tight">
-              Esta consultoria é para <span className="italic font-normal text-gold-elegant">você se...</span>
+              Esta mentoria é para <span className="italic font-normal text-gold-elegant">você se...</span>
             </h2>
 
             <div className="w-12 h-[1.5px] bg-gold-elegant"></div>

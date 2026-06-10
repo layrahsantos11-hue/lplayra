@@ -79,7 +79,7 @@ export default function Metodo() {
             <div className="w-12 h-1 bg-gold-elegant"></div>
 
             <p className="font-serif text-lg text-stone-200 italic font-light leading-relaxed">
-              “O Método Esmeralda é uma consultoria de lapidação feminina que une autoconhecimento, psicanálise, espiritualidade, prosperidade, posicionamento e reconstrução emocional.”
+              “O Método Esmeralda é uma mentoria de lapidação feminina que une autoconhecimento, psicanálise, espiritualidade, prosperidade, posicionamento e reconstrução emocional.”
             </p>
 
             <div className="space-y-4 font-sans text-sm sm:text-base text-stone-300 leading-relaxed font-light">

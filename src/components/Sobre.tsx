@@ -109,7 +109,7 @@ export default function Sobre() {
                 Através de um ambiente clínico de profunda escuta, acolhimento livre de julgamentos e embasamento empírico do funcionamento mental combinado à espiritualidade consciente, Layra orienta mulheres a reescreverem suas próprias narrativas cotidianas.
               </p>
               <p>
-                Ela acredita verdadeiramente que cada mulher possui uma esmeralda intacta, porém sufocada por antigas mágoas, escassez assimilada e limites frouxos. Essa consultoria de mentoria foi lapidada estrategicamente para que você saia com uma mente pacificada e um norte de prosperidade real.
+                Ela acredita verdadeiramente que cada mulher possui uma esmeralda intacta, porém sufocada por antigas mágoas, escassez assimilada e limites frouxos. Esta mentoria foi lapidada estrategicamente para que você saia com uma mente pacificada e um norte de prosperidade real.
               </p>
             </div>
 

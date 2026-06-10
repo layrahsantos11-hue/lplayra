@@ -43,7 +43,7 @@ export default function App() {
       {/* 6. High-Contrast Side-by-Side (Mulher Sobrecarregada vs Mulher Lapidada) */}
       <AntesDepois />
 
-      {/* 7. Diagnostic Checklists (Essa consultoria é para você se...) */}
+      {/* 7. Diagnostic Checklists (Essa mentoria é para você se...) */}
       <ParaQuem />
 
       {/* 8. Therapist Portrait bio (Quem vai guiar sua jornada — Layra Santos) */}

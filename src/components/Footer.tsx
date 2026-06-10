@@ -118,7 +118,7 @@ export default function Footer() {
       {/* POLICY OF PRIVACY MODAL POPUP */}
       {showPrivacyModal && (
         <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-white text-stone-800 max-w-2xl w-full rounded-2xl shadow-2xl p-6 sm:p-8 relative mt-12 overflow-hidden max-h-[80vh] flex flex-col justify-between">
+          <div className="bg-white text-stone-800 max-w-2xl w-full rounded-none shadow-2xl p-6 sm:p-8 relative mt-12 overflow-hidden max-h-[80vh] flex flex-col justify-between">
             <div className="space-y-4 overflow-y-auto pr-2">
               <div className="flex items-center gap-2 border-b border-stone-200 pb-3">
                 <Shield className="w-6 h-6 text-[#05412e]" />
@@ -129,7 +129,7 @@ export default function Footer() {
 
               <div className="font-sans text-xs sm:text-sm text-stone-600 space-y-3 leading-relaxed font-light">
                 <p>
-                  Sua privacidade é extremamente valiosa para nós. Esta política descreve como tratamos e protegemos as dados capturados na landing page profissional da consultoria <strong>Método Esmeralda</strong> de Layra Santos.
+                  Sua privacidade é extremamente valiosa para nós. Esta política descreve como tratamos e protegemos as dados capturados na landing page profissional da mentoria <strong>Método Esmeralda</strong> de Layra Santos.
                 </p>
                 <p>
                   <strong>1. Coleta de Informações:</strong> Nós coletamos seu nome, número de WhatsApp, endereço de e-mail e relatos descritivos de forma totalmente voluntária, apenas no formulário de captação de leads.
@@ -149,7 +149,7 @@ export default function Footer() {
             <div className="border-t border-stone-200 pt-5 mt-6 text-right">
               <button
                 onClick={() => setShowPrivacyModal(false)}
-                className="bg-[#043c2c] hover:bg-[#07563d] text-white px-6 py-2.5 rounded-full font-sans text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
+                className="bg-[#043c2c] hover:bg-[#07563d] text-white px-6 py-2.5 rounded-none font-sans text-xs font-bold uppercase tracking-wider transition-colors shadow-sm cursor-pointer"
               >
                 Entendi e Aceito
               </button>

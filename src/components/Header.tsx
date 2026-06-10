@@ -57,12 +57,12 @@ export default function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-7">
+          <nav className="hidden lg:flex items-center gap-3 xl:gap-5 shrink-0">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="font-sans text-xs font-semibold uppercase tracking-[0.14em] text-esmeralda-950 hover:text-gold-elegant transition-colors duration-300 relative after:absolute after:bottom-[-6px] after:left-0 after:right-0 after:h-[1px] after:bg-gold-bright after:scale-x-0 overflow-hidden hover:after:scale-x-100 after:transition-transform after:duration-300"
+                className="font-sans text-[10px] xl:text-xs font-semibold uppercase tracking-[0.08em] xl:tracking-[0.14em] text-esmeralda-950 hover:text-gold-elegant transition-colors duration-300 relative after:absolute after:bottom-[-6px] after:left-0 after:right-0 after:h-[1px] after:bg-gold-bright after:scale-x-0 overflow-hidden hover:after:scale-x-100 after:transition-transform after:duration-300 whitespace-nowrap"
               >
                 {item.label}
               </a>
@@ -70,19 +70,19 @@ export default function Header() {
           </nav>
 
           {/* Action Cta */}
-          <div className="hidden sm:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3 shrink-0">
             <a
               href="https://wa.me/5516991521475"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-2 border border-gold-elegant/40 hover:border-gold-bright/80 px-4 py-2.5 rounded-none text-xs font-sans font-semibold uppercase tracking-wider text-gold-dark hover:text-gold-elegant bg-stone-100 hover:bg-gold-elegant/15 transition-all duration-300"
+              className="group flex items-center gap-1.5 border border-gold-elegant/40 hover:border-gold-bright/80 px-2.5 py-2 xl:px-4 xl:py-2.5 rounded-none text-[10px] xl:text-xs font-sans font-semibold uppercase tracking-wider text-gold-dark hover:text-gold-elegant bg-stone-100 hover:bg-gold-elegant/15 transition-all duration-300 whitespace-nowrap"
             >
-              <MessageCircle className="w-4 h-4 text-[#25D366] group-hover:scale-110 transition-transform" />
+              <MessageCircle className="w-3.5 h-3.5 text-[#25D366] group-hover:scale-110 transition-transform" />
               <span>WhatsApp</span>
             </a>
             <a
               href="#formulario"
-              className="bg-esmeralda-800 hover:bg-esmeralda-900 text-white px-5 py-2.5 rounded-none text-xs font-sans font-semibold uppercase tracking-[0.08em] shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
+              className="bg-esmeralda-800 hover:bg-esmeralda-900 text-white px-3 py-2 xl:px-5 xl:py-2.5 rounded-none text-[10px] xl:text-xs font-sans font-semibold uppercase tracking-[0.08em] shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
             >
               Quero Iniciar
             </a>

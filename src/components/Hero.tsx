@@ -30,8 +30,8 @@ export default function Hero() {
               className="inline-flex items-center gap-2 border border-gold-elegant/40 bg-stone-100/50 px-4 py-1.5"
             >
               <Sparkles className="w-3.5 h-3.5 text-gold-elegant sparkle-animation" />
-              <span className="font-display text-[10px] sm:text-xs tracking-[0.3em] uppercase text-gold-dark font-bold">
-                Consultoria de Lapidação Feminina
+              <span className="font-sans text-[10px] sm:text-xs tracking-[0.3em] uppercase text-gold-dark font-bold">
+                Mentoria de Lapidação Feminina
               </span>
             </motion.div>
 

@@ -301,7 +301,7 @@ export default function Formulario() {
                     </>
                   ) : (
                     <>
-                      <span>Quero Participar da Consultoria</span>
+                      <span>Quero Participar da Mentoria</span>
                       <Send className="w-3.5 h-3.5 text-gold-bright group-hover:translate-x-1 transition-transform" />
                     </>
                   )}

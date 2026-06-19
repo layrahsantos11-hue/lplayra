@@ -148,14 +148,15 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="relative w-full max-w-[280px] sm:max-w-[300px] mx-auto aspect-[9/16] border border-gold-elegant bg-stone-900 shadow-2xl group overflow-hidden rounded-md"
+              className="relative w-full max-w-[280px] sm:max-w-[300px] mx-auto aspect-[9/16] border border-gold-elegant bg-stone-950 shadow-2xl group overflow-hidden rounded-md flex items-center justify-center"
             >
-              <iframe
-                src="https://drive.google.com/file/d/1vBAe2iXE4-QYJPQpRXVnjYSurCZHllX5/preview"
-                className="w-full h-full absolute inset-0 border-0 z-10"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-              ></iframe>
+              <video
+                src="https://drive.google.com/uc?export=download&id=1vBAe2iXE4-QYJPQpRXVanjYSurCZHllX5"
+                className="w-full h-full absolute inset-0 object-cover z-10"
+                controls
+                playsInline
+                preload="metadata"
+              ></video>
             </motion.div>
 
             {/* Welcoming Mentor Card */}

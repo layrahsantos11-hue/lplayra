@@ -3,11 +3,40 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
-import { motion } from 'motion/react';
-import { ShieldCheck, Award, MessageCircle, Heart, Star, Sparkles, BookOpen } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { ShieldCheck, Award, MessageCircle, Heart, Star, Sparkles, BookOpen, ChevronRight } from 'lucide-react';
+
+const facets = [
+  {
+    index: 0,
+    label: "01. Identidade",
+    role: "Acolhimento & Escuta",
+    src: "https://lh3.googleusercontent.com/d/1U4k0qGG0GToqgyfb1piHJELzTtPR8si4",
+    quote: "A cura começa no momento em que você se sente verdadeiramente compreendida e acolhida em sua essência.",
+    accent: "Resgate Emocional"
+  },
+  {
+    index: 1,
+    label: "02. Posicionamento",
+    role: "Autoestima & Limites",
+    src: "https://lh3.googleusercontent.com/d/16lD_gPYSAS41nXtURjzUtw79vd7BFu0G",
+    quote: "A mulher que conhece seu valor dita as regras e reconstrói as suas fronteiras de respeito com clareza.",
+    accent: "Poder de Presença"
+  },
+  {
+    index: 2,
+    label: "03. Abundância",
+    role: "Mentalidade Abundante",
+    src: "https://lh3.googleusercontent.com/d/1FHEW6bI8hH_bNOAgWydA8R8kgoVIACb_",
+    quote: "Romper as velhas amarras com a escassez te posiciona no fluxo natural de prosperidade que o Criador desenhou para você.",
+    accent: "Visão & Norte"
+  }
+];
 
 export default function Sobre() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <section
       id="sobre"
@@ -22,41 +51,90 @@ export default function Sobre() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Visual Column / Elegant Portrait Representation */}
+          {/* Visual Column / Elegant Portfolio Representation */}
           <div className="lg:col-span-5 flex flex-col items-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
-              className="relative w-full max-w-[340px] aspect-[3/4] rounded-none p-1 bg-white border border-gold-elegant shadow-2xl overflow-hidden group"
-            >
-              <div className="absolute inset-x-0 inset-y-0 bg-black/15 z-10 pointer-events-none group-hover:bg-transparent transition-all duration-300"></div>
-              
-              {/* Gold border overlay */}
+            
+            {/* Main Interactive Poster Display */}
+            <div className="relative w-full max-w-[340px] aspect-[3/4] bg-white border border-gold-elegant shadow-2xl p-1 overflow-hidden group">
+              <div className="absolute inset-x-0 inset-y-0 bg-black/10 z-10 pointer-events-none"></div>
               <div className="absolute inset-3 border border-gold-bright/35 z-20 pointer-events-none"></div>
               
-              {/* Glowing star accent */}
-              <div className="absolute top-6 right-6 sparkle-animation text-gold-bright z-20">
-                <Sparkles className="w-5 h-5 drop-shadow-md" />
+              {/* Floating micro-badge */}
+              <div className="absolute top-6 left-6 z-20 bg-esmeralda-950/80 border border-gold-elegant/70 px-3 py-1 font-sans text-[9px] uppercase tracking-widest text-gold-bright">
+                {facets[activeIndex].accent}
               </div>
 
-              <img 
-                src="/src/assets/images/layra_portrait_1_1781827300851.jpg"
-                alt="Layra Santos - Psicanalista Clínica & Mentora"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-              
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-esmeralda-950 via-esmeralda-950/40 to-transparent p-5 pt-12 z-20">
-                <span className="font-serif text-base font-medium text-gold-elegant tracking-widest block">
-                  LAYRA SANTOS
+              {/* Sparkle top right */}
+              <div className="absolute top-6 right-6 sparkle-animation text-gold-bright z-20">
+                <Sparkles className="w-4 h-4 drop-shadow-md" />
+              </div>
+
+              {/* Animate-Presence for sleek image carousel loading state */}
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={activeIndex}
+                  src={facets[activeIndex].src}
+                  alt="Layra Santos"
+                  initial={{ opacity: 0, scale: 1.05 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.5 }}
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </AnimatePresence>
+
+              {/* Card Label Bottom */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-esmeralda-950 via-esmeralda-950/45 to-transparent p-5 pt-16 z-20">
+                <span className="font-serif text-base font-medium text-gold-elegant tracking-widest block uppercase">
+                  Layra Santos
                 </span>
                 <span className="font-serif italic text-xs tracking-wider text-stone-200 block mt-0.5">
-                  Psicanalista Clínica & Mentora
+                  {facets[activeIndex].role}
                 </span>
               </div>
+            </div>
+
+            {/* Micro quote below portrait */}
+            <motion.div 
+              key={activeIndex}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="w-full max-w-[340px] mt-4 text-center px-4"
+            >
+              <p className="font-serif text-xs italic text-stone-500 leading-relaxed">
+                "{facets[activeIndex].quote}"
+              </p>
             </motion.div>
+
+            {/* Tab/Thumbnail Selectors underneath the Photo */}
+            <div className="w-full max-w-[340px] mt-6 grid grid-cols-3 gap-3">
+              {facets.map((f) => (
+                <button
+                  key={f.index}
+                  onClick={() => setActiveIndex(f.index)}
+                  className={`relative aspect-[3/4] border focus:outline-none transition-all duration-350 cursor-pointer overflow-hidden p-0.5 group ${
+                    activeIndex === f.index 
+                      ? 'border-gold-bright shadow-lg ring-1 ring-gold-elegant' 
+                      : 'border-stone-200 hover:border-gold-elegant/60'
+                  }`}
+                >
+                  <img 
+                    src={f.src}
+                    alt={f.label}
+                    className={`w-full h-full object-cover transition-all ${
+                      activeIndex === f.index ? 'brightness-[1.05]' : 'brightness-[0.65] group-hover:brightness-[0.85]'
+                    }`}
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-black/60 py-0.5 text-center">
+                    <span className="font-sans text-[8px] sm:text-[9px] font-bold text-white tracking-wider block">
+                      {f.label.split(". ")[1]}
+                    </span>
+                  </div>
+                </button>
+              ))}
+            </div>
 
             {/* Quick stats details badge bottom */}
             <div className="flex gap-4 justify-center mt-6 w-full max-w-[340px]">

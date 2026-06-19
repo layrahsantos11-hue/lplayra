@@ -162,7 +162,7 @@ export default function Hero() {
             <div className="bg-esmeralda-900/60 border border-gold-elegant/20 p-4 rounded-none flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border border-gold-elegant overflow-hidden shrink-0">
                 <img 
-                  src="/src/assets/images/layra_portrait_1_1781827300851.jpg" 
+                  src="https://lh3.googleusercontent.com/d/1U4k0qGG0GToqgyfb1piHJELzTtPR8si4" 
                   alt="Layra Santos" 
                   className="w-full h-full object-cover" 
                   referrerPolicy="no-referrer"

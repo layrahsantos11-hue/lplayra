@@ -151,8 +151,8 @@ export default function Hero() {
               className="relative w-full max-w-[280px] sm:max-w-[300px] mx-auto aspect-[9/16] border border-gold-elegant bg-stone-900 shadow-2xl group overflow-hidden rounded-md"
             >
               <iframe
-                src="https://drive.google.com/file/d/1vQmb5wjsuhaG6Jl_1r4AL4-1f909hvC_/preview"
-                className="w-[316%] h-full absolute top-0 left-1/2 -translate-x-1/2 border-0 z-10"
+                src="https://drive.google.com/file/d/1vBAe2iXE4-QYJPQpRXVnjYSurCZHllX5/preview"
+                className="w-full h-full absolute inset-0 border-0 z-10"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
               ></iframe>

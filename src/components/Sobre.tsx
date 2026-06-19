@@ -29,46 +29,33 @@ export default function Sobre() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
-              className="relative w-full max-w-[340px] aspect-[4/5] rounded-none bg-gradient-to-b from-esmeralda-950 to-esmeralda-900 p-2 border-2 border-gold-elegant shadow-2xl overflow-hidden group"
+              className="relative w-full max-w-[340px] aspect-[3/4] rounded-none p-1 bg-white border border-gold-elegant shadow-2xl overflow-hidden group"
             >
-              {/* Internal abstract vectors representing beautiful healing energy and therapy setting */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-gold-elegant/15 via-transparent to-transparent"></div>
+              <div className="absolute inset-x-0 inset-y-0 bg-black/15 z-10 pointer-events-none group-hover:bg-transparent transition-all duration-300"></div>
               
-              <div className="w-full h-full rounded-none bg-esmeralda-950 flex flex-col justify-between p-6 sm:p-8 relative overflow-hidden">
-                
-                {/* Floating sparkling stars and logo watermark */}
-                <div className="absolute top-6 right-6 sparkle-animation text-gold-bright">
-                  <Sparkles className="w-6 h-6" />
-                </div>
-                
-                <div className="absolute bottom-[-100px] right-[-100px] w-64 h-64 bg-emerald-600/10 rounded-full blur-3xl"></div>
-
-                {/* Styled silhouette representing the wisdom and grace of Layra Santos */}
-                <div className="flex-1 flex flex-col items-center justify-center pt-8">
-                  <div className="w-24 h-24 rounded-full border-2 border-gold-elegant flex items-center justify-center bg-esmeralda-900/60 mb-4 shadow-inner relative">
-                    <Heart className="w-10 h-10 text-gold-bright" />
-                    <Star className="w-4 h-4 text-gold-bright absolute top-0 right-0 sparkle-animation" />
-                  </div>
-                  
-                  <span className="font-serif text-lg font-medium text-gold-elegant tracking-widest text-center mt-2">
-                    LAYRA SANTOS
-                  </span>
-                  <span className="font-serif italic text-xs tracking-wider text-stone-300 text-center mt-1">
-                    Psicanalista Clínica & Mentora
-                  </span>
-                </div>
-
-                {/* Clinical signature panel */}
-                <div className="border-t border-gold-elegant/20 pt-4 mt-4 text-center space-y-1">
-                  <p className="text-[10px] sm:text-xs text-stone-300 font-sans tracking-wide">
-                    Registro Profissional Terápico Ativo
-                  </p>
-                  <p className="font-sans text-[9px] tracking-widest text-[#25d366] uppercase font-bold">
-                    Especialista em Famílias e Casais
-                  </p>
-                </div>
+              {/* Gold border overlay */}
+              <div className="absolute inset-3 border border-gold-bright/35 z-20 pointer-events-none"></div>
+              
+              {/* Glowing star accent */}
+              <div className="absolute top-6 right-6 sparkle-animation text-gold-bright z-20">
+                <Sparkles className="w-5 h-5 drop-shadow-md" />
               </div>
 
+              <img 
+                src="/src/assets/images/layra_portrait_1_1781827300851.jpg"
+                alt="Layra Santos - Psicanalista Clínica & Mentora"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-esmeralda-950 via-esmeralda-950/40 to-transparent p-5 pt-12 z-20">
+                <span className="font-serif text-base font-medium text-gold-elegant tracking-widest block">
+                  LAYRA SANTOS
+                </span>
+                <span className="font-serif italic text-xs tracking-wider text-stone-200 block mt-0.5">
+                  Psicanalista Clínica & Mentora
+                </span>
+              </div>
             </motion.div>
 
             {/* Quick stats details badge bottom */}

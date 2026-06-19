@@ -148,11 +148,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="relative w-full max-w-[280px] sm:max-w-[320px] mx-auto aspect-[9/16] border border-gold-elegant bg-black shadow-2xl group overflow-hidden"
+              className="relative w-full max-w-[280px] sm:max-w-[300px] mx-auto aspect-[9/16] border border-gold-elegant bg-stone-900 shadow-2xl group overflow-hidden rounded-md"
             >
               <iframe
                 src="https://drive.google.com/file/d/1vQmb5wjsuhaG6Jl_1r4AL4-1f909hvC_/preview"
-                className="w-full h-full absolute inset-0 border-0 z-10"
+                className="w-[316%] h-full absolute top-0 left-1/2 -translate-x-1/2 border-0 z-10"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
               ></iframe>
